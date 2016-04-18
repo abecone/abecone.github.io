@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Abe Cone</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+
+
+	<header>
+		<div class="navbar navbar-default navbar-fixed-top navbar-right" id="navbar">
+  				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+
+  				<a class="navbar-brand" href='index.html'>Abraham Cone</a>
+
+     			<div class = "collapse navbar-collapse navbar-responsive-collapse">
+	   				<ul class="nav navbar-nav nav-pills navbar-right">
+				    	
+				    	<li><a href="index.html">Home</a></li>
+				    	
+				    	<li class="active">
+
+							<a href="gallery.html">Gallery</a>
+
+				    	</li> 		
+
+				    	<li><a href="#contactModal" data-toggle="modal">Contact Me</a></li>			
+				    </ul>
+				</div> <!-- end collapse -->
+  
+		</div> <!-- end navbar -->
+	</header>	
+
+	<div class="modal fade" id="contactModal"> <!-- Start Modal -->
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;
+					</button>
+					<h4>Contact Me</h4>
+				</div>
+				<div class="modal-body">
+					<p> Phone: (734) 474-9203 </p>
+					<p> Address: 17830 Ben's Dr. </p>
+					<p> Chelsea, MI 48118</p>
+					<hr  style="margin-top: 0px; margin-bottom: 10px;">
+					<p>Or Email Me:</p>
+					<form action="https://formspree.io/2014acone@gmail.com" method="POST" class="form-horizontal">
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="inputName">Name</label>
+							<div class="col-lg-10">
+								<input class="form-control" id="inputName" placeholder="Name" type="text" name="name" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+							<div class="col-lg-10">
+								<input class="form-control" id="inputEmail" placeholder="Your email" type="email" name="_replyto" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="inputSubject">Subject</label>
+							<div class="col-lg-10">
+								<input class="form-control" id="inputSubject" placeholder="Subject" type="text" name="_subject" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+							<div class="col-lg-10">
+								<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3" name='message' required></textarea>
+								<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+								<button class="btn btn-success pull-right" type="submit">Send</button>
+								<input type="hidden" name="_next" value="{{backform}}"/>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> <!-- end contact modal -->
+
+	<!-- START CONTENT -->
+
+	<div class="container" id="gallery">
+		<h2>My Artwork</h2>
+
+		<hr>
+
+		<div class="gallery" id="galleryrows">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<a href="static/untitled1.jpg" data-title="Untitled 1" data-lightbox="artwork">
+						<img src="static/untitled1350.jpg" class="img-thumbnail" alt="untitled 1">
+					</a>
+					<p>Untitled<p>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<a href="static/untitled2.jpg" data-title="Untitled 2" data-lightbox="artwork">
+						<img src="static/untitled2350.jpeg"  class="img-thumbnail" alt="untitled 2">
+					</a>
+					<p>Untitled<p>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<a href="static/pinned_part_1.jpg" data-title="Pinned I" data-lightbox="artwork">
+						<img src="static/pinned_part_1350.jpg"  class="img-thumbnail" alt="pinned part 1">
+					</a>
+					<p>Pinned I</p>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<a href="static/pinned_part_2.jpg" data-title="Pinned II" data-lightbox="artwork">
+						<img src="static/pinned_part_2350.jpeg"  class="img-thumbnail" alt="pinned part 2">
+					</a>
+					<p>Pinned II</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<a href="static/swollen350.jpeg" data-title="Swollen" data-lightbox="artwork">
+						<img src="static/swollen350.jpeg"  class="img-thumbnail" alt="swollen">
+					</a>
+					<p>Swollen</p>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<a href="static/help.jpg" data-title="Help" data-lightbox="artwork">
+						<img src="static/help350.jpeg"  class="img-thumbnail" alt="help">
+					</a>
+					<p>Help</p>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<a href="static/decay.jpg" data-title="Decay" data-lightbox="artwork">
+						<img src="static/decay350.jpg"  class="img-thumbnail" alt="decay">
+					</a>
+					<p>Decay</p>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<a href="static/embrace.jpg" data-title="Embrace" data-lightbox="artwork">
+						<img src="static/embrace350.jpeg"  class="img-thumbnail" alt="embrace">
+					</a>
+					<p>Embrace</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- END CONTENT -->
+
+
+
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<h6>Copyright &copy; 2016 Amos Cone</h6>
+					</div>
+					<div class="col-sm-3">
+						<h6>For a closer look at what I am working on, check out my Instagram!</h6>
+						<a href="https://www.instagram.com/abraham_portfolio/"><img src="static/insta.png" alt="instagram"></a>
+					</div>
+					<div class="col-sm-3">
+						<h6>Navigation</h6>
+						<ul class="list-unstyled">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<h6>Website coded by <a href="http://www.amoscone.me">Amos Cone</a></h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer> <!-- end footer -->
+
+
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+
+</body>
+</html>
